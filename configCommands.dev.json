@@ -8,10 +8,10 @@
     "daily": {
       "rewardDay1": {
         "coin": 100,
-        "exp": 10
+        "exp": 100
       },
       "rewardFirstDay": {
-        "coin": 100,
+        "coin": 1000,
         "exp": 10
       }
     },

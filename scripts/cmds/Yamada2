@@ -1,0 +1,31 @@
+module.exports = {
+  config: {
+    name: "yamada2",
+    version: "1.0",
+    author: "TonNom",
+    countDown: 0,
+    role: 0,
+    shortDescription: {
+      en: "Réveil du bot"
+    },
+    longDescription: {
+      en: "Le bot répond à l'administrateur avec un message spécial"
+    },
+    category: "fun",
+    guide: {
+      en: "{pn}"
+    }
+  },
+
+  onStart: async function({ message, event, usersData }) {
+    const adminID = "TON_ID_FACEBOOK"; // Remplace par TON propre ID Facebook
+    const senderID = event.senderID;
+
+    if (senderID !== adminID) {
+      return message.reply("Tu n'es pas mon maître.");
+    }
+
+    const { name } = await usersData.get(senderID);
+    return message.reply(`Salut maître ${name}, je suis réveillé et à ton service 🤖`);
+  }
+};

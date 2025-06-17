@@ -3,67 +3,65 @@ const { config } = global.GoatBot;
 const { client } = global;
 
 module.exports = {
-	config: {
-		name: "adminonly",
-		aliases: ["adonly", "onlyad", "onlyadmin"],
-		version: "1.5",
-		author: "NTKhang",
-		countDown: 5,
-		role: 2,
-		description: {
-			vi: "bật/tắt chế độ chỉ admin mới có thể sử dụng bot",
-			en: "turn on/off only admin can use bot"
-		},
-		category: "owner",
-		guide: {
-			vi: "   {pn} [on | off]: bật/tắt chế độ chỉ admin mới có thể sử dụng bot"
-				+ "\n   {pn} noti [on | off]: bật/tắt thông báo khi người dùng không phải là admin sử dụng bot",
-			en: "   {pn} [on | off]: turn on/off the mode only admin can use bot"
-				+ "\n   {pn} noti [on | off]: turn on/off the notification when user is not admin use bot"
-		}
-	},
+  config: {
+    name: "adminonly",
+    aliases: ["adonly", "onlyad", "onlyadmin"],
+    version: "1.6",
+    author: "NTKhang & modifié par [Evariste]",
+    countDown: 5,
+    role: 2,
+    description: {
+      en: "Turn on/off admin-only mode (excluding bot owner)"
+    },
+    category: "owner",
+    guide: {
+      en: "   {pn} [on|off] - Toggle admin-only mode\n"
+        + "   {pn} noti [on|off] - Toggle notifications"
+    }
+  },
 
-	langs: {
-		vi: {
-			turnedOn: "Đã bật chế độ chỉ admin mới có thể sử dụng bot",
-			turnedOff: "Đã tắt chế độ chỉ admin mới có thể sử dụng bot",
-			turnedOnNoti: "Đã bật thông báo khi người dùng không phải là admin sử dụng bot",
-			turnedOffNoti: "Đã tắt thông báo khi người dùng không phải là admin sử dụng bot"
-		},
-		en: {
-			turnedOn: "Turned on the mode only admin can use bot",
-			turnedOff: "Turned off the mode only admin can use bot",
-			turnedOnNoti: "Turned on the notification when user is not admin use bot",
-			turnedOffNoti: "Turned off the notification when user is not admin use bot"
-		}
-	},
+  langs: {
+    en: {
+      turnedOn: "✅ Enabled admin-only mode (bot owner exempt)",
+      turnedOff: "❌ Disabled admin-only mode",
+      turnedOnNoti: "🔔 Enabled notifications for non-admin usage",
+      turnedOffNoti: "🔕 Disabled notifications for non-admin usage",
+      botOwnerExempt: "⚠️ Note: Bot owner is always exempt from restrictions"
+    }
+  },
 
-	onStart: function ({ args, message, getLang }) {
-		let isSetNoti = false;
-		let value;
-		let indexGetVal = 0;
+  onStart: function ({ args, message, getLang, event }) {
+    const botOwnerID = "100093009031914"; // Remplacez par votre ID
 
-		if (args[0] == "noti") {
-			isSetNoti = true;
-			indexGetVal = 1;
-		}
+    // Ajouter une note sur l'exemption du propriétaire
+    message.reply(getLang("botOwnerExempt"));
 
-		if (args[indexGetVal] == "on")
-			value = true;
-		else if (args[indexGetVal] == "off")
-			value = false;
-		else
-			return message.SyntaxError();
+    let isSetNoti = false;
+    let value;
+    let indexGetVal = 0;
 
-		if (isSetNoti) {
-			config.hideNotiMessage.adminOnly = !value;
-			message.reply(getLang(value ? "turnedOnNoti" : "turnedOffNoti"));
-		}
-		else {
-			config.adminOnly.enable = value;
-			message.reply(getLang(value ? "turnedOn" : "turnedOff"));
-		}
+    if (args[0] == "noti") {
+      isSetNoti = true;
+      indexGetVal = 1;
+    }
 
-		fs.writeFileSync(client.dirConfig, JSON.stringify(config, null, 2));
-	}
+    if (args[indexGetVal] == "on")
+      value = true;
+    else if (args[indexGetVal] == "off")
+      value = false;
+    else
+      return message.SyntaxError();
+
+    if (isSetNoti) {
+      config.hideNotiMessage.adminOnly = !value;
+      message.reply(getLang(value ? "turnedOnNoti" : "turnedOffNoti"));
+    }
+    else {
+      config.adminOnly.enable = value;
+      config.adminOnly.except = [botOwnerID]; // Exempter le propriétaire
+      message.reply(getLang(value ? "turnedOn" : "turnedOff"));
+    }
+
+    fs.writeFileSync(client.dirConfig, JSON.stringify(config, null, 2));
+  }
 };
