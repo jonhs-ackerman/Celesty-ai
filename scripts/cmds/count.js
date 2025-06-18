@@ -31,12 +31,12 @@ module.exports = {
 			invalidPage: "Số trang không hợp lệ"
 		},
 		en: {
-			count: "Number of messages of members:",
+			count: "𝐥𝐞𝐬 𝐩𝐥𝐮𝐬 𝐛𝐚𝐯𝐚𝐫𝐝𝐬 𝐝𝐮 𝐠𝐫𝐨𝐮𝐩𝐞 𝐞𝐭 𝐥𝐞𝐮𝐫𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐞𝐧𝐯𝐨𝐲é🤧:",
 			endMessage: "Those who do not have a name in the list have not sent any messages.",
 			page: "Page [%1/%2]",
 			reply: "Reply to this message with the page number to view more",
 			result: "%1 rank %2 with %3 messages",
-			yourResult: "You are ranked %1 and have sent %2 messages in this group",
+			yourResult: "𝐭𝐮 𝐞𝐬 𝐪𝐮𝐚𝐥𝐢𝐟𝐢é %1 𝐞𝐭 𝐭𝐞𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐬𝐨𝐧𝐭 𝐞𝐱𝐚𝐜𝐭𝐞𝐦𝐞𝐧𝐭 %2 𝐮𝐧𝐞 𝐯𝐫𝐚𝐢𝐞 𝐩𝐢𝐩𝐥𝐞𝐭𝐞 🙎‍♂️",
 			invalidPage: "Invalid page number"
 		}
 	},
