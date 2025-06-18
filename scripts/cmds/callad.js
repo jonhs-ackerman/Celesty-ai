@@ -34,17 +34,17 @@ module.exports = {
 			noAdmin: "Hiện tại bot chưa có admin nào"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to admin",
-			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
-			sendByUser: "\n- Sent from user",
-			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
-			success: "Sent your message to %1 admin successfully!\n%2",
+			missingMessage: "𝘁𝗮𝗽𝗲 𝗹𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗾𝘂𝗲 𝘁𝘂 𝘃𝗲𝘂𝘅 𝗲𝗻𝘃𝗼𝘆𝗲𝗿 𝗮 𝗿𝘂𝗱𝗲𝘂𝘀 𝗮𝗰𝗸𝗲𝗿𝗺𝗮𝗻",
+			sendByGroup: "\n- 𝗲𝗻𝘃𝗼𝘆𝗲𝗿 𝗱𝗲𝗽𝘂𝗶𝘀: %1\n- 𝗲𝘁 𝗹'ID: %2",
+			sendByUser: "\n- 𝗲𝗻𝘃𝗼𝘆𝗲𝗿 𝗽𝗮𝗿 𝗹'𝘂𝘁𝗹𝗶𝗹𝗶𝘀𝗮𝘁𝗲𝘂𝗿",
+			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\n𝗿𝗲𝗽𝗼𝗻𝗱𝘀 𝗮 𝗰𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗽𝗼𝘂𝗿 𝗿𝗲𝗽𝗼𝗻𝗱𝗿𝗲 𝗮 𝗹'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗲𝘂𝗿",
+			success: "𝘃𝗼𝘁𝗿𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗮 𝗲𝘁𝗲 𝗲𝗻𝘃𝗼𝘆𝗲𝗿 𝗮 %1 𝗶𝗺𝗺𝗼𝗿𝘁𝗲𝗹𝘀 𝗮𝘃𝗲𝗰 𝘀𝘂𝗰𝗰𝗲𝘀\n%2",
 			failed: "An error occurred while sending your message to %1 admin\n%2\nCheck console for more details",
-			reply: "📍 Reply from admin %1:\n─────────────────\n%2\n─────────────────\nReply this message to continue send message to admin",
+			reply: "☘️𝗿𝗲𝗽𝗼𝗻𝘀𝗲 𝗱𝗲 𝗿𝘂𝗱𝗲𝘂𝘀☘️ à ${senderName} %1:\n━━━━━━━✦✗✦━━━━━━━━\n%2\n━━━━━━━━━━━━━━━\n𝗿𝗲𝗽𝗼𝗻𝗱𝘀 𝗮 𝗰𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗽𝗼𝘂𝗿 𝗰𝗼𝗻𝘁𝗶𝗻𝘂𝗲𝗿 𝗹𝗮 𝗱𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 𝗮𝘃𝗲𝗰 𝗹'....𝑏𝑟𝑒𝑓 𝑡𝑢 𝑠𝑎𝑖𝑠 𝑑𝑒 𝑞𝑢𝑖 𝑗𝑒 𝑝𝑎𝑟𝑙𝑒𝑠🥴",
 			replySuccess: "Sent your reply to admin successfully!",
 			feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
-			replyUserSuccess: "Sent your reply to user successfully!",
-			noAdmin: "Bot has no admin at the moment"
+			replyUserSuccess: "🥴🙎‍♂️👩‍💻🦸‍♂️ 𝑡𝑜𝑛 𝑚𝑒𝑠𝑠𝑎𝑔𝑒 𝑒𝑠𝑡 𝑝𝑎𝑟𝑡𝑖𝑠",
+			noAdmin: "𝑙𝑒𝑠 𝑚𝑜𝑟𝑡𝑒𝑙𝑠 𝑠𝑜𝑛𝑡 𝑚𝑜𝑟𝑡𝑠 𝑎𝑐𝑡𝑢"
 		}
 	},
 
