@@ -30,8 +30,8 @@ module.exports = {
 			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "Notification from admin bot to all chat groups (do not reply to this message)",
+			missingMessage: "𝐞𝐜𝐫𝐢𝐭 𝐥𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐪𝐮𝐞 𝐭𝐮 𝐯𝐞𝐮𝐱 𝐞𝐧𝐯𝐨𝐲𝐞𝐫"
+			notification: "𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘃𝗲𝗻𝗮𝗻𝘁 𝗱𝗲 𝗹'𝗮𝗱𝗺𝗶𝗻\n━━━━━━◇x◇━━━━━━ (pour repondre utilises callad)",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
 			sentNotification: "✅ Sent notification to %1 groups successfully",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
