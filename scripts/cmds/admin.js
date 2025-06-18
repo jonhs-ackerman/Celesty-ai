@@ -34,13 +34,13 @@ module.exports = {
 			listAdmin: "👑 | Danh sách admin:\n%1"
 		},
 		en: {
-			added: "✅ | Added admin role for %1 users:\n%2",
-			alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
+			added: "☘️ 𝗻𝗼𝘂𝘃𝗲𝗹 𝗶𝗺𝗺𝗼𝗿𝘁𝗲𝗹 %1 𝗹'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗲𝘂𝗿:\n%2",
+			alreadyAdmin: "\n⚠️ | %1 𝗲𝘀𝘁 𝗱𝗲𝗷𝗮 𝗺𝗲𝗺𝗯𝗿𝗲 𝗽𝗮𝗿𝗺𝗶𝘀 𝗹𝗲𝘀 𝗶𝗺𝗺𝗼𝗿𝘁𝗲𝗹𝘀:\n%2",
 			missingIdAdd: "⚠️ | Please enter ID or tag user to add admin role",
-			removed: "✅ | Removed admin role of %1 users:\n%2",
+			removed: "✅ | 𝗶𝗺𝗺𝗼𝗿𝘁𝗮𝗹𝗶𝘁𝗲 𝗿𝗲𝘁𝗶𝗿𝗲𝗿 𝗮𝘃𝗲𝗰 𝘀𝘂𝗰𝗰𝗲𝘀 %1 𝗵𝗮😚:\n%2",
 			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
 			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: "👑 | List of admins:\n%1"
+			listAdmin: "👑 | 𝘃𝗼𝗶𝗰𝗶 𝗹𝗮 𝗹𝗶𝘀𝘁𝗲 𝗱𝗲𝘀 𝗲𝘁𝗲𝗿𝗻𝗲𝗹𝘀 :\n%1"
 		}
 	},
 
