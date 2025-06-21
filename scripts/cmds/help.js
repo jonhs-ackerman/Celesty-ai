@@ -60,9 +60,9 @@ module.exports = {
       msg += `\n╭━━━━━━━━━━━╮\n│✦💦𝗰𝗲𝗹𝗲𝘀𝘁𝘆💦✦\n╰━━━━━━━━━━━╯`;
 
       const helpListImages = [
-        "https://i.ibb.co/3Nc4gPV/image.jpg",
-        "https://i.ibb.co/3cq5ZsP/image.jpg",
-        "https://i.ibb.co/p4NcsqV/image.jpg",
+        "https://i.supaimg.com/e2c6560d-c371-4da1-a641-3a996d053992.jpg",
+        "https://i.supaimg.com/41dc6a38-08a1-4dc8-9971-d45b69a99b99.jpg",
+        "https://i.supaimg.com/56472beb-d254-4c15-b3a6-b936106d8da6.jpg",
         "https://i.supaimg.com/bfaa9d08-c51c-4d82-bd9b-8c51e514f2f8.jpg",
         "https://i.supaimg.com/9cdd5990-ee7b-4bdf-a676-fb8c2a244813.jpg"
       ];
