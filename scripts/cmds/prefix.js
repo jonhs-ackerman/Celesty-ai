@@ -15,7 +15,7 @@ module.exports = {
  if (event.body && event.body.toLowerCase() === "prefix") {
  return message.reply({
  body: `┏━━━━ • ✿ • ━━━━┓\n\n  ➠ ¥   \n┗━━━━ • ✿ • ━━━━┛\n\n𝗰𝗲𝗹𝗲𝘀𝘁𝘆🖤🥃`,
- attachment: await global.utils.getStreamFromURL("https://i.supaimg.com/5516cdda-25c2-443e-b17a-20f5813617a3.jpg")
+ attachment: await global.utils.getStreamFromURL("https://i.supaimg.com/2a6c8439-3107-4e3d-b763-d38d15324435.jpg")
  });
  }
  }
