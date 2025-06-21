@@ -2,7 +2,7 @@ module.exports = {
  config: {
  name: "ask",
  version: 1.0,
- author: "RUDEUS",
+ author: "rudeus",
  longDescription: "AI",
  category: "ai",
  guide: {
@@ -16,10 +16,10 @@ module.exports = {
 
  const fonts = {
  mathsans: {
- a: "𝒂", b: "𝒃", c: "𝒄", d: "𝒅", e: "𝒆", f: "𝒇", g: "𝒈", h: "𝒉", i: "𝒊",
- j: "𝒋", k: "𝒌", l: "𝒍", m: "𝒎", n: "𝒏", o: "𝒐", p: "𝒑", q: "𝒒", r: "𝒓",
- s: "𝒔", t: "𝒕", u: "𝒖", v: "𝒗", w: "𝒘", x: "𝒙", y: "𝒚", z: "𝒛",
- A: "𝘼", B: "𝗕", C: "𝗖", D: "𝗗", E: "𝗘", F: "𝗙", G: "𝗚", H: "𝗛", I: "𝗜",
+ a: "𝖺", b: "𝖻", c: "𝖼", d: "𝖽", e: "𝖾", f: "𝖿", g: "𝗀", h: "𝗁", i: "𝗂",
+ j: "𝗃", k: "𝗄", l: "𝗅", m: "𝗆", n: "𝗇", o: "𝗈", p: "𝗉", q: "𝗊", r: "𝗋",
+ s: "𝗌", t: "𝗍", u: "𝗎", v: "𝗏", w: "𝗐", x: "𝗑", y: "𝗒", z: "𝗓",
+ A: "𝗔", B: "𝗕", C: "𝗖", D: "𝗗", E: "𝗘", F: "𝗙", G: "𝗚", H: "𝗛", I: "𝗜",
  J: "𝗝", K: "𝗞", L: "𝗟", M: "𝗠", N: "𝗡", O: "𝗢", P: "𝗣", Q: "𝗤", R: "𝗥",
  S: "𝗦", T: "𝗧", U: "𝗨", V: "𝗩", W: "𝗪", X: "𝗫", Y: "𝗬", Z: "𝗭"
  }
@@ -34,7 +34,7 @@ module.exports = {
 
  const rolePlay = "quand tu répond à cette question ajoutes des emojis convenable :\n\n";
 
- const Prefixes = ['salut', 'ai', 'celesty',];
+ const Prefixes = ['rudeus', 'clever', 'celesty'];
 
  const prefix = Prefixes.find((p) => event.body && event.body.toLowerCase().startsWith(p));
  if (!prefix) return;
@@ -46,7 +46,7 @@ module.exports = {
  const senderName = senderInfo[senderID].name;
 
  if (!prompt) {
- const reply = `𝙚𝙘𝙧𝙞𝙩 𝙖 𝙫𝙤𝙞𝙭 𝙝𝙖𝙪𝙩𝙚 ${senderName} 𝗼𝗻 𝗲𝗻𝘁𝗲𝗻𝗱𝘀 𝗿𝗶𝗲𝗻 𝗰𝗵𝗲𝗿𝘀 𝗺𝗼𝗿𝘁𝗲𝗹 🥃🚬🙃`;
+ const reply = `𝐬𝐚𝐥𝐮𝐭 ${senderName} 👋🥃  𝐚 𝐪𝐮𝐨𝐢 𝐩𝐮𝐢𝐬 𝐣𝐞 𝐯𝐨𝐮𝐬 𝐚𝐢𝐝𝐞𝐫 𝐚𝐮𝐣𝐨𝐮𝐫𝐝'𝐡𝐮𝐢🍷🖤`;
  let styled = "";
  for (let char of reply) {
  styled += char in fonts.mathsans ? fonts.mathsans[char] : char;
@@ -68,10 +68,10 @@ module.exports = {
  } else if (lowerPrompt.includes("blague") || lowerPrompt.includes("chat") || lowerPrompt.includes("rigole") || lowerPrompt.includes("drôle")) {
  toneNote = "\n\n😹 Haha, bonne question !";
  } else if (lowerPrompt.includes("comment") || lowerPrompt.includes("pourquoi") || lowerPrompt.includes("fonctionne") || lowerPrompt.includes("qu'est-ce")) {
- toneNote = "\n\n🥃 C’est une question très intéressante !";
+ toneNote = "\n\n🧠 C’est une question très intéressante !";
  }
 
- const dialogue = `𝘀𝗮𝗹𝘂𝘁🥃 ${senderName} 𝙩𝙖 𝙦𝙪𝙚𝙨𝙩𝙞𝙤𝙣:\n${prompt}\n\n\n❖ ── ✦ ──『🥃』── ✦ ── ❖\n☠️|𝗖𝗘𝗟𝗘𝗦𝗧𝗬\n∴━━━✿━━━∴\n\n :\n${botReply}${toneNote}\n\n\n 𝗷'𝗮𝘁𝘁𝗲𝗻𝗱𝘀 𝘁𝗮 𝗽𝗿𝗼𝗰𝗵𝗮𝗶𝗻𝗲 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 ${sendername} 🥃🚬`;
+ const dialogue = `👤 ${senderName} :\n${prompt}\n\n🤖 𝗖𝗘𝗟𝗘𝗦𝗧𝗬🥃:\n \n${botReply}${toneNote} \n \n \n 𝗲𝘁 𝘀𝘂𝗿𝘁𝗼𝘂𝘁 𝗯𝗼𝗻𝗻𝗲 𝗹𝗲𝗰𝘁𝘂𝗿𝗲 🥃🖤`;
 
  let formattedAnswer = "";
  for (let letter of dialogue) {
@@ -79,7 +79,7 @@ module.exports = {
  }
 
  await message.reply(formattedAnswer);
- api.setMessageReaction("🥃", event.messageID, () => {}, true);
+ api.setMessageReaction("🍷", event.messageID, () => {}, true);
 
  } catch (error) {
  console.error("Error:", error.message);
