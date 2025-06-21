@@ -31,7 +31,7 @@ module.exports = {
 		},
 		en: {
 			missingMessage: "𝐞𝐜𝐫𝐢𝐭 𝐥𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐪𝐮𝐞 𝐭𝐮 𝐯𝐞𝐮𝐱 𝐞𝐧𝐯𝐨𝐲𝐞𝐫"
-			notification: "𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘃𝗲𝗻𝗮𝗻𝘁 𝗱𝗲 𝗹'𝗮𝗱𝗺𝗶𝗻\n━━━━━━◇x◇━━━━━━ (pour repondre utilises callad)",
+			notification: "𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘃𝗲𝗻𝗮𝗻𝘁 𝗱𝗲 𝗹'𝗮𝗱𝗺𝗶𝗻\n━━━━━━◇x◇━━━━━━ (𝖕𝖔𝖚𝖗 𝖗𝖊𝖕𝖔𝖓𝖉𝖗𝖊 𝖋𝖆𝖚𝖙 𝖚𝖙𝖎𝖑𝖎𝖘𝖊𝖗 𝖑𝖆 𝖈𝖒𝖉 𝖈𝖆𝖑𝖑𝖆𝖉)",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
 			sentNotification: "✅ Sent notification to %1 groups successfully",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
