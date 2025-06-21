@@ -23,7 +23,7 @@ module.exports = {
 			restartting: "🔄 | Đang khởi động lại bot..."
 		},
 		en: {
-			restartting: "🔄 | Restarting bot..."
+			restartting: "🔄 | 𝗰𝗲𝗹𝗲𝘀𝘁𝘆 𝗲𝗻𝘁𝗿𝗮𝗶𝗻 𝗱𝗲 𝗿𝗲𝗱𝗲𝗺𝗺𝗮𝗿𝗲𝗿..."
 		}
 	},
 
@@ -31,7 +31,7 @@ module.exports = {
 		const pathFile = `${__dirname}/tmp/restart.txt`;
 		if (fs.existsSync(pathFile)) {
 			const [tid, time] = fs.readFileSync(pathFile, "utf-8").split(" ");
-			api.sendMessage(`✅ | Bot restarted\n⏰ | Time: ${(Date.now() - time) / 1000}s`, tid);
+			api.sendMessage(`✅ | 𝗿𝗲𝗱𝗲𝗺𝗺𝗮𝗿𝗮𝗴𝗲 𝘁𝗲𝗿𝗺𝗶𝗻é\n⏰ | 𝘁𝗲𝗺𝗽𝘀: ${(Date.now() - time) / 1000}s`, tid);
 			fs.unlinkSync(pathFile);
 		}
 	},
