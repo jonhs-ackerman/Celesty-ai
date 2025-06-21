@@ -31,8 +31,8 @@ module.exports = {
 			turnedOffNoti: "Đã tắt thông báo khi người dùng không phải là admin sử dụng bot"
 		},
 		en: {
-			turnedOn: "Turned on the mode only admin can use bot",
-			turnedOff: "Turned off the mode only admin can use bot",
+			turnedOn: "𝘀𝗲𝘂𝗹𝘀 𝗹𝗲𝘀 𝗮𝗱𝗺𝗶𝗻𝘀 𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝗻𝘁 𝗹𝗲 𝗯𝗼𝘁 𝗮𝗰𝘁𝗶𝘃é☘️",
+			turnedOff: "𝗺𝗮𝗶𝗻𝘁𝗲𝗻𝗮𝗻𝘁 𝘁𝗼𝘂𝘁 𝗹𝗲 𝗺𝗼𝗻𝗱𝗲 𝗽𝗲𝘂𝘁 𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝗿 𝗹𝗲 𝗯𝗼𝘁🍫",
 			turnedOnNoti: "Turned on the notification when user is not admin use bot",
 			turnedOffNoti: "Turned off the notification when user is not admin use bot"
 		}
