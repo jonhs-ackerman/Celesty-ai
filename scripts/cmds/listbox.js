@@ -2,10 +2,10 @@ module.exports = {
 	config: {
 		name: "listbox",
 		aliases: [],
-		author: "kshitiz",
-		version: "2.0",
+		author: "kshitiz + Rudeus Ackerman",
+		version: "2.1",
 		cooldowns: 5,
-		role: 2,
+		role: 2, // owner only
 		shortDescription: {
 			en: "List all group chats the bot is in."
 		},
@@ -14,28 +14,33 @@ module.exports = {
 		},
 		category: "owner",
 		guide: {
-			en: "{p}{n} "
+			en: "{p}{n}"
 		}
 	},
+
 	onStart: async function ({ api, event }) {
 		try {
-			const groupList = await api.getThreadList(100, null, ['INBOX']);
+			const allThreads = await api.getThreadList(100, null, ['INBOX']);
+			const groupList = allThreads.filter(group => group.isGroup && group.threadName !== null);
 
-
-			const filteredList = groupList.filter(group => group.threadName !== null);
-
-			if (filteredList.length === 0) {
-
-				await api.sendMessage('No group chats found.', event.threadID);
-			} else {
-				const formattedList = filteredList.map((group, index) =>
-					`│${index + 1}•𝗟𝗲 𝗴𝗿𝗼𝘂𝗽𝗲 𝗱𝗲𝘀 𝗺𝗼𝗿𝘁𝗲𝗹𝘀 𝗻𝗼𝗺𝗺𝗲𝗿\n│${group.threadName}\n│𝗶𝗱: ${group.threadID}`
-				);
-				const message = `╭━━━━━━━━━━━━[🥃]\n│𝗹𝗶𝘀𝘁𝗲 𝗱𝗲𝘀 𝗴𝗿𝗼𝘂𝗽𝗲𝘀 :\n${formattedList.map(line => `${line}`).join("\n")}\n╰━━━━━━━━━━━━[☘️]`;
-				await api.sendMessage(message, event.threadID, event.messageID);
+			if (groupList.length === 0) {
+				return api.sendMessage('Aucun groupe trouvé où je suis présent.', event.threadID, event.messageID);
 			}
+
+			const formattedList = groupList.map((group, index) =>
+				`│${index + 1}. ${group.threadName}\n│🆔: ${group.threadID}`
+			);
+
+			const message = 
+`╭━━━━━━━━━━━━[🥃]
+│ LISTE DES GROUPES ACTIFS :
+${formattedList.join("\n")}
+╰━━━━━━━━━━━━[☘️]`;
+
+			return api.sendMessage(message, event.threadID, event.messageID);
 		} catch (error) {
-			console.error("Error listing group chats", error);
+			console.error("❌ Erreur lors de la récupération des groupes :", error);
+			return api.sendMessage("❌ Une erreur est survenue pendant la récupération des groupes.", event.threadID, event.messageID);
 		}
-	},
+	}
 };
