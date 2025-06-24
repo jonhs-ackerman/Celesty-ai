@@ -16,13 +16,13 @@
     "enable": false,
     "ignoreCommand": []
   },
-  "adminBot": [61577574560976],
+  "adminBot": [],
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": [],
+    "whiteListIds": [100055105364295],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "✞🥃𝐜𝐞𝐥𝐞𝐬𝐭𝐢𝐚🥃🖤✞",
+  "nickNameBot": "✞🥃𝐜𝐞𝐥𝐞𝐬𝐭𝐢𝐚 𝐜𝐥𝐞𝐯𝐞𝐫 𝐬𝐡𝐚𝐝𝐨𝐰🥃🖤✞",
   "prefix": "¥",
   "database": {
     "type": "sqlite",
