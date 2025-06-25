@@ -15,7 +15,9 @@ module.exports = {
     }
   },
 
-  onMessage: async function ({ event, api, message }) {
+  onStart: async function() {},
+
+  onChat: async function({ event, api, message }) {
     const text = (event.body || "").toLowerCase().trim();
     const senderID = event.senderID;
     const name = await api.getUserInfo(senderID).then(res => res[senderID]?.name || "Toi");
