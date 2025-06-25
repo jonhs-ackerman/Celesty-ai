@@ -16,10 +16,10 @@
     "enable": false,
     "ignoreCommand": []
   },
-  "adminBot": [],
+  "adminBot": [100055105364295],
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": [100055105364295],
+    "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "nickNameBot": "✞🥃𝐜𝐞𝐥𝐞𝐬𝐭𝐢𝐚 𝐜𝐥𝐞𝐯𝐞𝐫 𝐬𝐡𝐚𝐝𝐨𝐰🥃🖤✞",
