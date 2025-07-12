@@ -96,7 +96,7 @@ rudeus ackerman\n✧══════•❁❀❁•══════✧\n htt
       const guideBody = configCommand.guide?.fr || configCommand.guide?.en || "Aucun guide disponible.";
       const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-      const response = `╭═══════《 ⚔️ DÉTAILS DE LA CMD ⚔️ 》═══════╮
+      const response = `╭═══════《 DÉTAILS 》═══════╮
 ┃ ✦ 𝗡𝗼𝗺 : ${configCommand.name}
 ┃ ✦ 𝗗𝗲́𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : ${longDescription}
 ┃ ✦ 𝗔𝘂𝘁𝗿𝗲𝘀 𝗻𝗼𝗺𝘀 : ${configCommand.aliases ? configCommand.aliases.join(", ") : "Aucun"}
@@ -104,7 +104,7 @@ rudeus ackerman\n✧══════•❁❀❁•══════✧\n htt
 ┃ ✦ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : ${configCommand.version || "1.0"}
 ┃ ✦ 𝗔𝘂𝘁𝗲𝘂𝗿 : ${author}
 ┃ ✦ 𝗨𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 : ${usage}
-╰═══════《 🌀 RUDEUS 🌀 》═══════╯`;
+╰═══════《 RUDEUS 》═══════╯`;
 
       await message.reply(response);
     }
