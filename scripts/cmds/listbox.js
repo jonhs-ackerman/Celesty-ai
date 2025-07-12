@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
 		name: "listbox",
-		aliases: [],
+		aliases: [listbox],
 		author: "kshitiz + Rudeus Ackerman",
 		version: "2.1",
 		cooldowns: 5,
