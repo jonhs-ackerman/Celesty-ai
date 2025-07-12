@@ -22,14 +22,14 @@ module.exports = {
 			defaultWelcomeMessage: "Xin chào {userName}.\nChào mừng bạn đến với {boxName}.\nChúc bạn có buổi {session} vui vẻ!"
 		},
 		en: {
-			session1: "m𝐚𝐭𝐢𝐧é𝐞",
-			session2: "𝐣𝐨𝐮𝐫𝐧é",
-			session3: "𝐬𝐨𝐢𝐫𝐞𝐞",
-			session4: "𝐧𝐮𝐢𝐭",
-			welcomeMessage: "┎━─━─━─━─━─━─━─━\n🖤𝒎𝒆𝒓𝒄𝒊 𝒅𝒆 𝒎'𝒂𝒗𝒐𝒊𝒓 \n🍀𝒊𝒏𝒗𝒊𝒕é 𝒅𝒂𝒏𝒔 𝒍𝒆 𝒈𝒓𝒐𝒖𝒑𝒆\n🍀𝒎𝒐𝒏 𝒑𝒓𝒆𝒇𝒊𝒙 𝒆𝒔𝒕: %1\n🍀𝒑𝒐𝒖𝒓 𝒗𝒐𝒊𝒓 𝒎𝒂 𝒍𝒊𝒔𝒕𝒆 𝒅𝒆𝒔 \n🍀𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆𝒔, 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒔 \n:🍀 %1𝐡𝐞𝐥𝐩 \n┖━─━─━─━─━─━─━☯",
+			session1: "𝗮𝗽𝗿𝗲̀𝘀 𝗺𝗶𝗱𝗶 ",
+			session2: "𝘀𝗼𝗶𝗿𝗲́𝗲 ",
+			session3: "𝗺𝗮𝘁𝗶𝗻𝗲́𝗲 ",
+			session4: "𝗮𝗽𝗿𝗲̀𝘀 𝗺𝗶𝗱𝗶 ",
+			welcomeMessage: "╭───────────Ꙭ\n┊𝗠𝗲𝗿𝗰𝗶 𝗱𝗲 𝗺'𝗮𝘃𝗼𝗶𝗿\n|𝗶𝗻𝘁𝗲́𝗴𝗿𝗲́  𝗱𝗮𝗻𝘀 𝘃𝗼𝘁𝗿𝗲\n|𝗴𝗿𝗼𝘂𝗽𝗲. 𝐣𝐞 𝐯𝐚𝐢𝐬 𝗳𝗮𝗶𝗿𝗲 𝗱𝗲 𝗺𝗼𝗻 𝗺𝗶𝗲𝘂𝘅\n|𝗽𝗼𝘂𝗿 𝘃𝗼𝘂𝘀 𝗮𝘀𝘀𝗶𝘀𝘁𝗲𝘇🫡\n|𝗠𝗼𝗻 𝗽𝗿𝗲𝗳𝗶𝘅 𝗲𝘀𝘁【%1】\n|𝗣𝗼𝘂𝗿 𝗮𝗳𝗳𝗶𝗰𝗵𝗲𝗿 𝗹𝗮 𝗹𝗶𝘀𝘁𝗲\n|𝗱𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀, 𝘃𝗲𝘂𝗶𝗹𝗹𝗲𝘇\n|𝘀𝗮𝗶𝘀𝗶𝗿: %1𝗵𝗲𝗹𝗽\n╰───────────Ꙭ",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `❖ ── ✦ ──『✙』── ✦ ── ❖\n☘️𝘀𝗮𝗹𝘂𝘁 ㊡✐{userName}✐㊡𝗯𝗶𝗲𝗻𝘃𝗲𝗻𝘂𝗲 𝗮\n{multiple} 𝗱𝗮𝗻𝘀 𝗹𝗲 𝗴𝗿𝗼𝘂𝗽𝗲: {boxName}\n☘️𝘁𝘂 𝘃𝗮𝘀 𝘀𝘂𝗿𝗲𝗺𝗲𝗻𝘁 𝘁'𝗮𝗺𝘂𝘀𝗲𝗿 𝗮𝘃𝗲𝗰 𝗻𝗼𝘂𝘀\n☘️𝗶𝗰𝗶 𝗲𝘁 𝘁𝘂 𝘁𝗲 𝗳𝗲𝗿𝗮𝘀 𝘀𝘂𝗿𝗲𝗺𝗲𝗻𝘁 𝗱𝗲𝘀 𝗮𝗺𝗶𝘀 \n☘️𝗽𝗮𝘀𝘀𝗲𝘀 𝘂𝗻𝗲 𝗯𝗼𝗻𝗻𝗲 {session} 🥃🖤`
+			defaultWelcomeMessage: `┏━━━━━━━━━━━━━\n✙𝗦𝗮𝗹𝘂𝘁 {userName}\n✙𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝘂𝗲 𝗱𝗮𝗻𝘀 𝗻𝗼𝘁𝗿𝗲 𝗴𝗿𝗼𝘂𝗽𝗲\n✙{boxName} \n✙𝗲𝘁 𝗲𝘁 𝗽𝗮𝘀𝘀𝗲 𝘂𝗻𝗲 𝗯𝗼𝗻𝗻𝗲 \n✙{session}\n┗━━━━━━━━━━━━━`
 		}
 	},
 
